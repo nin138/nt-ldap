@@ -1,0 +1,6 @@
+dn: cn=root,dc=hal,dc=ac,dc=jp
+changetype: add
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: root
+userPassword: password

@@ -1,0 +1,6 @@
+dn: cn=user1,dc=hal,dc=ac,dc=jp
+changetype: add
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: user1
+userPassword: password

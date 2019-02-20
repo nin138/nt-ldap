@@ -1,0 +1,19 @@
+version: "3"
+services:
+  ldap:
+    build:
+      context: ./docker/ldap
+    environment:
+      LDAP_ORGANISATION: "My Company"
+      LDAP_DOMAIN: "hal.ac.jp"
+      LDAP_ADMIN_PASSWORD: "admin"
+    ports:
+      - "389:389"
+      - "636:636"
+  admin:
+    image: osixia/phpldapadmin:0.7.2
+    ports:
+      - "8080:80"
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: "ldap"
+      PHPLDAPADMIN_HTTPS: "false"

@@ -1,0 +1,4 @@
+dn: ou=group,dc=hal,dc=ac,dc=jp
+changetype: add
+objectclass: organizationalUnit
+ou: group
