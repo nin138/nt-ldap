@@ -1,6 +1,9 @@
+dn: cn=admin,dc=hal,dc=ac,dc=jp
+changetype: modrdn
+newrdn: cn=root
+deleteoldrdn: 0
+
 dn: cn=root,dc=hal,dc=ac,dc=jp
-changetype: add
-objectClass: simpleSecurityObject
-objectClass: organizationalRole
-cn: root
-userPassword: password
+changetype: modify
+replace: userPassword
+userPassword: {SSHA}6CtARyKvbWh7G1cn7bbnWi/+s87JRuey
