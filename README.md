@@ -10,6 +10,6 @@ ldapadd -f /ldif/ou/computers.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin 
 ldapadd -f /ldif/ou/groups.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin && \
 ldapadd -f /ldif/cn/user1.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin && \
 ldapadd -f /ldif/cn/com1.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin && \
-ldapadd -f /ldif/cn/g1.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin" && \
+ldapadd -f /ldif/cn/g1.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin && \
 ldapmodify -f /ldif/root.ldif -x -D "cn=admin,dc=hal,dc=ac,dc=jp" -w admin
 ```
